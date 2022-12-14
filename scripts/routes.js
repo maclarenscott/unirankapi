@@ -1,0 +1,41 @@
+export const university_routes = [
+    "university-of-toronto",
+    "university-of-british-columbia",
+    "mcgill-university",
+    "mcmaster-university",
+    "university-of-alberta",
+    "university-of-montreal",
+    "university-of-calgary",
+    "university-of-ottawa",
+    "university-of-waterloo",
+    "university-of-western-ontario",
+    "simon-fraser-university",
+    "dalhousie-university",
+    "university-of-victoria",
+    "laval-university",
+    "university-of-manitoba",
+    "queens-university",
+    "york-university",
+    "carleton-university",
+    "university-of-guelph",
+    "university-of-saskatchewan",
+    "concordia-university",
+    "memorial-university-of-newfoundland",
+    "université-de-québec-à-montréal",
+    "university-of-sherbrooke",
+    "toronto-metropolitan-university",
+    "university-of-new-brunswick",
+    "university-of-regina",
+    "university-of-ontario-institute-of-technology",
+    "university-of-windsor",
+    "wilfrid-laurier-university",
+    "lakehead-university",
+    "brock-university",
+    "laurentian-university",
+    "trent-university",
+]
+
+
+//what is the path to this file from the root directory of the project?
+// Path: unirank/scripts/routes.js
+
