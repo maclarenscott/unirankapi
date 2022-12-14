@@ -1,34 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# How to Use the Filter Endpoint
 
-## Getting Started
+Use the following format to use the filter endpoint:
 
-First, run the development server:
+```/api/programs/filter/[filter]```
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+For example, to filter programs by competitive score:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/api/programs/filter/competitive_score
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The `[filter]` parameter can be one of the following:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- name
+- admission_average
+- acceptance_rate
+- applications
+- enrolment
+- competitive_score
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The university can be any university in Canada.
 
-## Learn More
+## Ordering Results
 
-To learn more about Next.js, take a look at the following resources:
+You can specify the order of the results by using the `order` parameter. For example, to sort the results in ascending order by competitive score:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+/api/programs/filter/competitive_score?order=asc
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The `order` parameter can be one of the following:
 
-## Deploy on Vercel
+- asc (ascending)
+- desc (descending)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The default order is descending.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Limiting Results
+
+You can use the `limit` parameter to limit the number of results. For example, to limit the results to the top 10 programs by competitive score:
+
+/api/programs/filter/competitive_score?limit=10
+
+The `limit` parameter must be a positive integer. The default limit is 1000.
