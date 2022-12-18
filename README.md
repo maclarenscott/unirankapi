@@ -1,3 +1,7 @@
+# Unirank API
+
+This api is used to retrieve canadian university program related stats and information in JSON format. Currently, it can be filtered by university and by a filter statistic.
+
 # How to Use the Filter Endpoint
 
 Use the following format to use the filter endpoint:
