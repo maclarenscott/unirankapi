@@ -2,7 +2,7 @@
 
 This api is used to retrieve canadian university program related stats and information in JSON format. Currently, it can be filtered by university and by a filter statistic.
 
-The API is in /programs/api
+The API is in /pages/api
 
 # How to Use the Filter Endpoint
 
